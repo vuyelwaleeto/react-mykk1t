@@ -1,14 +1,15 @@
-h1, p {
+h1,
+p {
   font-family: Lato;
-  
 }
-subtitle1, subtitle2 {
-  font-size: 15px;
+subtitle1,
+subtitle2 {
+  font-size: 18px;
   font-weight: 100;
+  color: black;
 }
 img {
-   object-fit: fill;
-   width : 20px;
-   height : 40px;
+  object-fit: fill;
+  width: 100%;
+  height: 300px;
 }
-
