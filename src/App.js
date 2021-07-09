@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     flex: 1
   },
   title: {
-    background: 'darkslategray',
+    background: 'grey',
     textAlign: 'center',
     fontSize: 20,
     paddingTop: 40,
@@ -28,20 +28,20 @@ const useStyles = makeStyles({
     padding: 20
   },
   contact: {
-    background: 'lightslategrey',
+    background: 'dimgrey',
     fontWeight: 'bold',
     color: 'white',
     padding: 20,
     fontSize: 20
   },
   Proprofile: {
-    background: 'darkslategray'
+    background: 'grey'
   },
   picture: {
     paddingTop: 0
   },
   icon: {
-    color: 'darkslategray'
+    color: 'black'
   }
 });
 

@@ -10,16 +10,17 @@ subtitle {
 }
 p {
   border-style: solid;
-  border-color: darkslategray;
-  border-width: 5px;
+  border-color: black;
+  border-width: 3px;
 }
 
 img {
   object-fit: fill;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   float: left;
-  border: solid;
+  border: double;
   border-color: black;
-  border-width: 6px;
+  border-width: 3px;
+  border-radius: 200px;
 }
