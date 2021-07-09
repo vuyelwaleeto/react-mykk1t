@@ -2,7 +2,9 @@ import React from 'react';
 import './style.css';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Paper } from '@material-ui/core';
-import { PhoneIcon, HomeIcon, EmailIcon } from '@material-ui/icons';
+import PhoneIcon from '@material-ui/icons/Phone';
+import HomeIcon from '@material-ui/icons/Home';
+import EmailIcon from '@material-ui/icons/Email';
 
 const useStyles = makeStyles({
   root: {
@@ -36,7 +38,10 @@ const useStyles = makeStyles({
     background: 'darkslategray'
   },
   picture: {
-    padding: 10
+    paddingTop: 0
+  },
+  icon: {
+    color: 'darkslategray'
   }
 });
 
@@ -64,17 +69,20 @@ export default function App() {
           <Paper className={classes.contact}>
             <p> CONTACT</p> <br />
             <br />
-            <subtitle2> HOME ADDRESS </subtitle2>
+            <HomeIcon className={classes.icon} />
+            <subtitle2> ADDRESS </subtitle2>
             <br />
             <subtitle1>
               45 Millin Street <br /> Duncanville <br /> Vereeniging <br /> 1939
             </subtitle1>
             <br />
             <br />
+            <PhoneIcon className={classes.icon} />
             <subtitle2> CELLPHONE </subtitle2> <br />
             <subtitle1>063 086 2362/067 889 3065</subtitle1> <br />
             <br />
-            <subtitle2> EMAIL ADDRESS </subtitle2>
+            <EmailIcon className={classes.icon} />
+            <subtitle2> EMAIL </subtitle2>
             <br />
             <subtitle1>lindelwamaka99@gmail.com</subtitle1>
             <br />
