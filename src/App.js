@@ -2,33 +2,41 @@ import React from 'react';
 import './style.css';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Paper } from '@material-ui/core';
+import { PhoneIcon, HomeIcon, EmailIcon } from '@material-ui/icons';
 
 const useStyles = makeStyles({
   root: {
     flex: 1
   },
-  header: {
-    background: 'burlywood',
+  title: {
+    background: 'darkslategray',
     textAlign: 'center',
     fontSize: 20,
     paddingTop: 40,
     paddingBottom: 80,
     paddingLeft: 20,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    color: 'white'
   },
   profile: {
     background: 'white',
     fontSize: 20,
     length: 150,
     fontWeight: 'bold',
-    padding: 20,
-    color: 'burlywood'
+    padding: 20
   },
   contact: {
-    background: 'blanchedalmond',
+    background: 'lightslategrey',
     fontWeight: 'bold',
+    color: 'white',
     padding: 20,
     fontSize: 20
+  },
+  Proprofile: {
+    background: 'darkslategray'
+  },
+  picture: {
+    padding: 10
   }
 });
 
@@ -39,11 +47,13 @@ export default function App() {
     <div className={classes.root}>
       <Grid container spacing={4} className={classes.grid}>
         <Grid item xs={12}>
-          <Paper className={classes.header}>
-            <img
-              src="https://stackblitz.com/files/react-mykk1t/github/vuyelwaleeto/react-mykk1t/master\IMG-20210620-WA0030.jpg"
-              alt="my picture here"
-            />
+          <Paper className={classes.title}>
+            <div className={classes.picture}>
+              <img
+                src="https://stackblitz.com/files/react-mykk1t/github/vuyelwaleeto/react-mykk1t/master\IMG-20210620-WA0030.jpg"
+                alt="my picture here"
+              />
+            </div>
             VUYELWA MAKABA
             <br />
             <br />
@@ -52,7 +62,6 @@ export default function App() {
         </Grid>
         <Grid item xs={5}>
           <Paper className={classes.contact}>
-            <br />
             <p> CONTACT</p> <br />
             <br />
             <subtitle2> HOME ADDRESS </subtitle2>
@@ -76,7 +85,9 @@ export default function App() {
         </Grid>
         <Grid item xs={7}>
           <Paper className={classes.profile}>
-            <p1>PROFESSIONAL PROFILE</p1>
+            <div className={classes.Proprofile}>
+              <p1>PROFESSIONAL PROFILE</p1>
+            </div>
             <br />
             <br />
             <subtitle1>
@@ -93,7 +104,10 @@ export default function App() {
             </subtitle1>
             <br />
             <br />
-            <br /> <p1>WORK EXPERIENCE </p1>
+            <br />{' '}
+            <div className={classes.Proprofile}>
+              <p1>WORK EXPERIENCE </p1>
+            </div>
             <br />
             <br />
             <subtitle1>
@@ -106,7 +120,9 @@ export default function App() {
             <br />
             <br />
             <br />
-            <p1>EDUCATION </p1>
+            <div className={classes.Proprofile}>
+              <p1>EDUCATION </p1>
+            </div>
             <br />
             <br />
             <subtitle1>
