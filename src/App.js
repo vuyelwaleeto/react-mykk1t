@@ -5,6 +5,9 @@ import { Grid, Paper, LinearProgress } from '@material-ui/core';
 import PhoneIcon from '@material-ui/icons/Phone';
 import HomeIcon from '@material-ui/icons/Home';
 import EmailIcon from '@material-ui/icons/Email';
+import PersonIcon from '@material-ui/icons/Person';
+import SchoolIcon from '@material-ui/icons/School';
+import WorkIcon from '@material-ui/icons/Work';
 
 const useStyles = makeStyles({
   root: {
@@ -123,6 +126,7 @@ export default function App() {
           <Paper className={classes.profile}>
             <div className={classes.Proprofile}>
               <p1>PROFESSIONAL PROFILE</p1>
+              <PersonIcon />
             </div>
             <br />
             <subtitle1>
@@ -141,6 +145,7 @@ export default function App() {
             <br />
             <div className={classes.Proprofile}>
               <p1>WORK EXPERIENCE </p1>
+              <WorkIcon />
             </div>
             <br />
             <subtitle1>
@@ -153,6 +158,7 @@ export default function App() {
             <br />
             <div className={classes.Proprofile}>
               <p1>EDUCATION </p1>
+              <SchoolIcon />
             </div>
             <br />
             <subtitle1>
