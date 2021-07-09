@@ -10,7 +10,8 @@ subtitle {
 }
 p {
   border-style: solid;
-  border-color:tan;
+  border-color: black;
+  background-color: tan;
   border-width: 3px;
 }
 

@@ -47,7 +47,7 @@ const useStyles = makeStyles({
     color: 'black'
   },
   progress: {
-    color: 'black'
+    bacground: 'black'
   }
 });
 
