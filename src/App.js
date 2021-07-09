@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Paper } from '@material-ui/core';
+import { Grid, Paper, LinearProgress } from '@material-ui/core';
 import PhoneIcon from '@material-ui/icons/Phone';
 import HomeIcon from '@material-ui/icons/Home';
 import EmailIcon from '@material-ui/icons/Email';
@@ -11,36 +11,42 @@ const useStyles = makeStyles({
     flex: 1
   },
   title: {
-    background: 'grey',
+    background: 'tan',
     textAlign: 'center',
     fontSize: 20,
     paddingTop: 40,
     paddingBottom: 80,
     paddingLeft: 20,
     fontWeight: 'bold',
-    color: 'white'
+    color: 'black'
   },
   profile: {
-    background: 'white',
+    background: '',
     fontSize: 20,
     length: 150,
     fontWeight: 'bold',
     padding: 20
   },
   contact: {
-    background: 'dimgrey',
+    background: '',
     fontWeight: 'bold',
-    color: 'white',
+    color: '',
     padding: 20,
     fontSize: 20
   },
   Proprofile: {
-    background: 'grey'
+    background: 'tan',
+    borderStyle: 'solid',
+    borderColor: 'black',
+    borderWidth: 3
   },
   picture: {
     paddingTop: 0
   },
   icon: {
+    color: 'black'
+  },
+  progress: {
     color: 'black'
   }
 });
@@ -68,7 +74,6 @@ export default function App() {
         <Grid item xs={5}>
           <Paper className={classes.contact}>
             <p> CONTACT</p> <br />
-            <br />
             <HomeIcon className={classes.icon} />
             <subtitle2> ADDRESS </subtitle2>
             <br />
@@ -88,7 +93,30 @@ export default function App() {
             <br />
             <br />
             <p> SKILLS </p>
-            <br />
+            <subtitle1> Visual Basic </subtitle1>
+            <LinearProgress
+              variant="determinate"
+              value={70}
+              className={classes.progress}
+            />
+            <subtitle1> Java </subtitle1>
+            <LinearProgress
+              variant="determinate"
+              value={60}
+              className={classes.progress}
+            />
+            <subtitle1> C# </subtitle1>
+            <LinearProgress
+              variant="determinate"
+              value={50}
+              className={classes.progress}
+            />
+            <subtitle1> HTML/CSS </subtitle1>
+            <LinearProgress
+              variant="determinate"
+              value={60}
+              className={classes.progress}
+            />
           </Paper>
         </Grid>
         <Grid item xs={7}>
@@ -96,7 +124,6 @@ export default function App() {
             <div className={classes.Proprofile}>
               <p1>PROFESSIONAL PROFILE</p1>
             </div>
-            <br />
             <br />
             <subtitle1>
               Having recently completed my Diploma in Information Technology, I
@@ -112,11 +139,9 @@ export default function App() {
             </subtitle1>
             <br />
             <br />
-            <br />{' '}
             <div className={classes.Proprofile}>
               <p1>WORK EXPERIENCE </p1>
             </div>
-            <br />
             <br />
             <subtitle1>
               SEASONAL SALES ASSISTANT <br /> Typo Vaal Mall <br /> November
@@ -126,12 +151,9 @@ export default function App() {
               2019 to January 2020 <br />
             </subtitle1>
             <br />
-            <br />
-            <br />
             <div className={classes.Proprofile}>
               <p1>EDUCATION </p1>
             </div>
-            <br />
             <br />
             <subtitle1>
               DIPLOMA IN INFORMATION TECHNOLOGY <br /> Damelin College <br />
