@@ -4,6 +4,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Paper } from '@material-ui/core';
 
 const useStyles = makeStyles({
+  root: {
+    flex: 1
+  },
   header: {
     background: 'burlywood',
     textAlign: 'center',
@@ -25,7 +28,7 @@ const useStyles = makeStyles({
     background: 'blanchedalmond',
     fontWeight: 'bold',
     padding: 20,
-    fontSize: 20,
+    fontSize: 20
   }
 });
 
@@ -49,7 +52,8 @@ export default function App() {
         </Grid>
         <Grid item xs={5}>
           <Paper className={classes.contact}>
-            <br /><p> CONTACT</p> <br />
+            <br />
+            <p> CONTACT</p> <br />
             <br />
             <subtitle2> HOME ADDRESS </subtitle2>
             <br />
@@ -65,7 +69,9 @@ export default function App() {
             <br />
             <subtitle1>lindelwamaka99@gmail.com</subtitle1>
             <br />
-            <br /><p> SKILLS </p><br />
+            <br />
+            <p> SKILLS </p>
+            <br />
           </Paper>
         </Grid>
         <Grid item xs={7}>
@@ -87,7 +93,8 @@ export default function App() {
             </subtitle1>
             <br />
             <br />
-            <br /> <p1>WORK EXPERIENCE </p1><br />
+            <br /> <p1>WORK EXPERIENCE </p1>
+            <br />
             <br />
             <subtitle1>
               SEASONAL SALES ASSISTANT <br /> Typo Vaal Mall <br /> November
@@ -99,7 +106,8 @@ export default function App() {
             <br />
             <br />
             <br />
-            <p1>EDUCATION </p1><br />
+            <p1>EDUCATION </p1>
+            <br />
             <br />
             <subtitle1>
               DIPLOMA IN INFORMATION TECHNOLOGY <br /> Damelin College <br />
