@@ -64,7 +64,7 @@ export default function App() {
           <Paper className={classes.title}>
             <div className={classes.picture}>
               <img
-                src="https://stackblitz.com/files/react-mykk1t/github/vuyelwaleeto/react-mykk1t/master\IMG-20210620-WA0030.jpghttps://stackblitz.com/files/react-mykk1t/github/vuyelwaleeto/react-mykk1t/master/mypic.jpg"
+                src="https://stackblitz.com/files/react-mykk1t/github/vuyelwaleeto/react-mykk1t/master/mypic.jpg"
                 alt="my picture here"
               />
             </div>
@@ -126,6 +126,7 @@ export default function App() {
             <subtitle1>
               {' '}
               Anel Pretorious <br /> Manager: Typo Vaal <br /> 083 458 6449{' '}
+              <br />
               <br /> Yves Mpeye <br /> Lecturer: Damelin <br /> 061 455 2756
             </subtitle1>
           </Paper>
