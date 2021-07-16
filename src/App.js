@@ -40,7 +40,7 @@ const useStyles = makeStyles({
   Proprofile: {
     background: 'tan',
     borderStyle: 'solid',
-    borderColor: 'black',
+    borderColor: 'tan',
     borderWidth: 3
   },
   picture: {
@@ -64,7 +64,7 @@ export default function App() {
           <Paper className={classes.title}>
             <div className={classes.picture}>
               <img
-                src="https://stackblitz.com/files/react-mykk1t/github/vuyelwaleeto/react-mykk1t/master\IMG-20210620-WA0030.jpg"
+                src="https://stackblitz.com/files/react-mykk1t/github/vuyelwaleeto/react-mykk1t/master\IMG-20210620-WA0030.jpghttps://stackblitz.com/files/react-mykk1t/github/vuyelwaleeto/react-mykk1t/master/mypic.jpg"
                 alt="my picture here"
               />
             </div>
