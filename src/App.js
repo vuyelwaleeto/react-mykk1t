@@ -120,6 +120,14 @@ export default function App() {
               value={60}
               className={classes.progress}
             />
+            <br />
+            <br />
+            <p> REFERENCES </p>
+            <subtitle1>
+              {' '}
+              Anel Pretorious <br /> Manager: Typo Vaal <br /> 083 458 6449{' '}
+              <br /> Yves Mpeye <br /> Lecturer: Damelin <br /> 061 455 2756
+            </subtitle1>
           </Paper>
         </Grid>
         <Grid item xs={7}>
